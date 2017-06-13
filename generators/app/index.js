@@ -7,7 +7,7 @@ module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the prime ' + chalk.red('generator-meetch') + ' generator!'
+      'Welcome to the ' + chalk.red('generator-mitchallen\n-react-component') + ' generator!'
     ));
 
     const prompts = [{
@@ -183,6 +183,10 @@ module.exports = class extends Generator {
   }
 
   install() {
-    this.installDependencies();
+    this.installDependencies({
+      npm: true,
+      bower: false,
+      yarn: false
+    });
   }
 };
