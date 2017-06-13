@@ -30,6 +30,12 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.21
+
+* Added end routine to run __npm test__ at the end
+ * This triggers webpack
+ * This causes a side effect causing the generator tests themselves to throw an error (issue submitted - generator only - not the generated package)
+
 ### Version 0.0.20
 
 * Removed work in progress message from readme
