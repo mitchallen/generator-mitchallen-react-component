@@ -1,6 +1,6 @@
 {
   "name": "generator-mitchallen-react-component",
-  "version": "0.0.10",
+  "version": "0.0.9",
   "description": "react component project generator",
   "homepage": "http://mitchallen.com",
   "author": {
@@ -35,9 +35,9 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublish": "npm version patch",
     "pretest": "eslint . --fix",
     "test": "jest __tests__",
+    "prepublish": "nsp check && npm version patch",
     "publish": "npm publish"
   },
   "eslintConfig": {
