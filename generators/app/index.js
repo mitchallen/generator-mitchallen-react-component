@@ -14,7 +14,7 @@ module.exports = class extends Generator {
       type: 'confirm',
       name: 'scoped',
       message: 'Will this project be published under an npm scope?',
-      default: 'false'
+      default: false
     },
     {
       when: function (response) {
@@ -38,13 +38,25 @@ module.exports = class extends Generator {
     {
       type: 'input',
       name: 'bitbucketUser',
-      message: 'bitbucket user name',
+      message: 'bitbucket.org user name',
       store: true
     },
     {
       type: 'input',
       name: 'githubUser',
-      message: 'github user name',
+      message: 'github.com user name',
+      store: true
+    },
+    {
+      type: 'input',
+      name: 'travisUser',
+      message: 'travis-ci.org user name',
+      store: true
+    },
+    {
+      type: 'input',
+      name: 'codecovUser',
+      message: 'codecov.io user name',
       store: true
     },
     {
@@ -77,12 +89,22 @@ module.exports = class extends Generator {
       npmAuthor: this.props.npmAuthor,
       bitbucketUser: this.props.bitbucketUser,
       githubUser: this.props.githubUser,
+      travisUser: this.props.travisUser,
+      codecovUser: this.props.codecovUser,
       currentYear: new Date().getFullYear()
     };
 
     this.fs.copyTpl(
       this.templatePath('_package.json'),
       this.destinationPath('package.json'),
+      data
+    );
+
+    // File: README.md
+
+    this.fs.copyTpl(
+      this.templatePath('_README.md'),
+      this.destinationPath('README.md'),
       data
     );
 
