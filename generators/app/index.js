@@ -136,6 +136,13 @@ module.exports = class extends Generator {
       this.destinationPath('.travis.yml')
     );
 
+    // File: webpack.config.js
+
+    this.fs.copy(
+      this.templatePath('_webpack.config.js'),
+      this.destinationPath('webpack.config.js')
+    );
+
     // File: LICENSE
 
     this.fs.copyTpl(
@@ -149,6 +156,14 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('_index.js'),
       this.destinationPath('src/index.js'),
+      data
+    );
+
+    // File: Smoke.spec.js
+
+    this.fs.copyTpl(
+      this.templatePath('_test-smoke.spec.js'),
+      this.destinationPath('test/Smoke.spec.js'),
       data
     );
   }
