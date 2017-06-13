@@ -38,7 +38,7 @@
     "pretest": "eslint . --fix",
     "test": "jest __tests__",
     "prepublish": "nsp check && npm version patch",
-    "publish": "npm publish"
+    "//": "Do NOT create a 'publish' script - will cause publishing loop"
   },
   "eslintConfig": {
     "extends": "xo-space",
