@@ -5,8 +5,6 @@
 
 ## Installation
 
-# NOTE: WORK IN PROGRESS
-
 First, install [Yeoman](http://yeoman.io) and generator-mitchallen-react-component using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
@@ -28,6 +26,15 @@ yo mitchallen-react-component
 
 MIT © [Mitch Allen](http://mitchallen.com)
 
+* * *
+
+## Version History
+
+### Version 0.0.20
+
+* Removed work in progress message from readme
+
+* * *
 
 [npm-image]: https://badge.fury.io/js/generator-mitchallen-react-component.svg
 [npm-url]: https://npmjs.org/package/generator-mitchallen-react-component
