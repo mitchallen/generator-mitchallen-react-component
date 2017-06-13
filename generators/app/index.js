@@ -122,6 +122,13 @@ module.exports = class extends Generator {
       this.destinationPath('.babelrc')
     );
 
+    // File: .npmignore
+
+    this.fs.copy(
+      this.templatePath('_npmignore'),
+      this.destinationPath('.npmignore')
+    );
+
     // File: LICENSE
 
     this.fs.copyTpl(
