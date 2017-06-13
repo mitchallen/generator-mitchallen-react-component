@@ -33,7 +33,7 @@ module.exports = class extends Generator {
     {
       type: 'input',
       name: 'reactClassName',
-      message: 'react component class name'
+      message: 'react component class name (Capitalize, no dashes)'
     },
     {
       type: 'input',
@@ -76,12 +76,43 @@ module.exports = class extends Generator {
       reactClassName: this.props.reactClassName,
       npmAuthor: this.props.npmAuthor,
       bitbucketUser: this.props.bitbucketUser,
-      githubUser: this.props.githubUser
+      githubUser: this.props.githubUser,
+      currentYear: new Date().getFullYear()
     };
 
     this.fs.copyTpl(
       this.templatePath('_package.json'),
       this.destinationPath('package.json'),
+      data
+    );
+
+    // File: Gruntfile.js
+
+    this.fs.copy(
+      this.templatePath('_Gruntfile.js'),
+      this.destinationPath('Gruntfile.js')
+    );
+
+    // File: .babelrc
+
+    this.fs.copy(
+      this.templatePath('_babelrc'),
+      this.destinationPath('.babelrc')
+    );
+
+    // File: LICENSE
+
+    this.fs.copyTpl(
+      this.templatePath('_LICENSE'),
+      this.destinationPath('LICENSE'),
+      data
+    );
+
+    // File: index.js
+
+    this.fs.copyTpl(
+      this.templatePath('_index.js'),
+      this.destinationPath('src/index.js'),
       data
     );
   }
