@@ -11,7 +11,15 @@ describe('generator-mitchallen-react-component:app', () => {
 
   it('creates files', () => {
     assert.file([
-      'dummyfile.txt'
+      'Gruntfile.js',
+      'README.md',
+      'LICENSE',
+      'package.json',
+      'webpack.config.js',
+      'src/index.js',
+      'test/Smoke.spec.js',
+      'test/dom.js',
+      'test/helpers.js'
     ]);
   });
 });
