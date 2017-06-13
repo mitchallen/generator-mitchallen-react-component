@@ -159,12 +159,26 @@ module.exports = class extends Generator {
       data
     );
 
-    // File: Smoke.spec.js
+    // File: test/Smoke.spec.js
 
     this.fs.copyTpl(
       this.templatePath('_test-smoke.spec.js'),
       this.destinationPath('test/Smoke.spec.js'),
       data
+    );
+
+     // File: test/dom.js
+
+    this.fs.copy(
+      this.templatePath('_test-dom.js'),
+      this.destinationPath('test/dom.js')
+    );
+
+    // File: test/helpers.js
+
+    this.fs.copy(
+      this.templatePath('_test-helpers.js'),
+      this.destinationPath('test/helpers.js')
     );
   }
 
