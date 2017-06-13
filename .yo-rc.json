@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Mitch Allen",
+      "authorEmail": "mitch.c.allen@gmail.com",
+      "authorUrl": "http://mitchallen.com"
+    }
+  }
+}
