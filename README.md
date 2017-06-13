@@ -5,6 +5,8 @@
 
 ## Installation
 
+# NOTE: WORK IN PROGRESS
+
 First, install [Yeoman](http://yeoman.io) and generator-mitchallen-react-component using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
