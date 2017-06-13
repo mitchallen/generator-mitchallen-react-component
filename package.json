@@ -38,6 +38,7 @@
     "pretest": "eslint . --fix",
     "test": "jest __tests__",
     "patch": "npm version patch",
+    "postpatch": "git push origin --tags",
     "prepublish": "nsp check",
     "//": "Do NOT create a 'publish' script - will cause publishing loop"
   },
