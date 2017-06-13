@@ -37,7 +37,9 @@
   "scripts": {
     "prepublish": "nsp check",
     "pretest": "eslint . --fix",
-    "test": "jest __tests__"
+    "test": "jest __tests__",
+    "prepublish": "npm version patch",
+    "publish": "npm publish"
   },
   "eslintConfig": {
     "extends": "xo-space",
