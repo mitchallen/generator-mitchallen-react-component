@@ -37,7 +37,8 @@
   "scripts": {
     "pretest": "eslint . --fix",
     "test": "jest __tests__",
-    "prepublish": "nsp check && npm version patch",
+    "patch": "npm version patch",
+    "prepublish": "nsp check",
     "//": "Do NOT create a 'publish' script - will cause publishing loop"
   },
   "eslintConfig": {
