@@ -189,4 +189,10 @@ module.exports = class extends Generator {
       yarn: false
     });
   }
+
+  end() {
+    // This causes issues for running tests on generator
+    // Running tests will trigger build and webpack first
+    this.spawnCommand('npm', ['test']);
+  }
 };
