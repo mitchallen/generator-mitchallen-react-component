@@ -129,6 +129,13 @@ module.exports = class extends Generator {
       this.destinationPath('.npmignore')
     );
 
+    // File: .travis.yml
+
+    this.fs.copy(
+      this.templatePath('_travis.yml'),
+      this.destinationPath('.travis.yml')
+    );
+
     // File: LICENSE
 
     this.fs.copyTpl(
