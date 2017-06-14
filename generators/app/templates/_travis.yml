@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "stable"
+before_install:
+- npm install -g jest jest-cli
 script:
   - npm run test-coverage
 after_success:
