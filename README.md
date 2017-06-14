@@ -40,6 +40,9 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.23
+
+* Generator test case now passes --notest option
 
 ### Version 0.0.22
 
