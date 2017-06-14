@@ -32,14 +32,6 @@ npm install -g yo
 npm install -g generator-mitchallen-react-component
 ```
 
-### Install Test Framework
-
-To run the generator tests and the tests generated for your project you will need to globally install __jest__ (http://facebook.github.io/jest/).
-
-```bash
-npm install -g jest jest-cli
-```
-
 ### Create and Generate Project
 
 Then generate your new project:
@@ -58,9 +50,29 @@ To skip running tests after package creation, use the __--notest__ flag:
 yo mitchallen-react-component --notest
 ```
 
+* * *
+
 ## Getting To Know Yeoman
 
  * [Learn more about Yeoman](http://yeoman.io/).
+
+* * *
+
+## Testing
+
+### Install Test Framework
+
+To run the generator tests you will need to globally install __jest__ (http://facebook.github.io/jest/).
+
+```bash
+npm install -g jest jest-cli
+```
+
+To test, go to the root folder and type:
+
+    npm test
+
+* * *
 
 ## License
 
@@ -69,6 +81,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 * * *
 
 ## Version History
+
+### Version 0.0.33
+
+* Corrected documentation on what test framework needs to be installed where
 
 ### Version 0.0.32
 
@@ -94,7 +110,7 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ### Version 0.0.27
 
-* Updated .travis.yml to install jest before running tests
+* Updated .travis.yml to install jest before running generator tests
 
 ### Version 0.0.26
 
