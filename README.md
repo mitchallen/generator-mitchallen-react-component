@@ -25,10 +25,22 @@
 
 First, install [Yeoman](http://yeoman.io) and generator-mitchallen-react-component using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
+__Note:__ You may need to preface ```npm install -g``` commands with ```sudo```.
+
 ```bash
 npm install -g yo
 npm install -g generator-mitchallen-react-component
 ```
+
+### Install Test Framework
+
+To run the generator tests and the tests generated for your project you will need to globally install __jest__ (http://facebook.github.io/jest/).
+
+```bash
+npm install -g jest jest-cli
+```
+
+### Create and Generate Project
 
 Then generate your new project:
 
@@ -57,6 +69,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 * * *
 
 ## Version History
+
+### Version 0.0.25
+
+* Added note about installing __jest__ globally
 
 ### Version 0.0.24
 

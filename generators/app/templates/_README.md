@@ -49,6 +49,18 @@ __NOTE:__ <%= reactClassName %> must be Capitalized or component won't render.
 
 ## Testing
 
+### Install Test Framework
+
+To run the tests you will need to globally install __jest__ (http://facebook.github.io/jest/).
+
+__Note:__ You may need to preface ```npm install -g``` commands with ```sudo```.
+
+```bash
+npm install -g jest jest-cli
+```
+
+### Run the Tests
+
 To test, go to the root folder and type (sans __$__):
 
     $ npm test
@@ -57,7 +69,7 @@ To test, go to the root folder and type (sans __$__):
 
 ### Prerequisite
 
-If you've never installed __create-react-app__:
+If you've never installed __create-react-app__ (you may need to use ```sudo```):
 
 ```
 $ npm install -g create-react-app
@@ -65,10 +77,10 @@ $ npm install -g create-react-app
 
 ### Create a local npm link
 
-In the original component folder:
+In the original component folder (you may need to use ```sudo```):
 
 ```
-$ sudo npm link
+$ npm link
 ```
 
 ### Create a test package
