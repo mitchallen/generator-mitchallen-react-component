@@ -6,6 +6,7 @@ var helpers = require('yeoman-test');
 describe('generator-mitchallen-react-component:app', () => {
   beforeAll(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
+      .withOptions({notest: true})
       .withPrompts({someAnswer: true});
   });
 
