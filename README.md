@@ -70,6 +70,11 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.31
+
+* Install codecov dev dependency for test coverage
+* Adjusted test-coverage script
+
 ### Version 0.0.30
 
 * Add test-coverage script
