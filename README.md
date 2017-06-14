@@ -70,6 +70,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.26
+
+* Cleaned up console logging
+
 ### Version 0.0.25
 
 * Added note about installing __jest__ globally
