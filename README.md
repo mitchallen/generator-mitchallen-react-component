@@ -70,6 +70,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.28
+
+* Updated _travis.yml template to install jest
+
 ### Version 0.0.27
 
 * Updated .travis.yml to install jest before running tests
