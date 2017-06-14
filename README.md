@@ -1,6 +1,24 @@
 # generator-mitchallen-react-component
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+<p align="left">
+  <a href="https://travis-ci.org/mitchallen/generator-mitchallen-react-component">
+    <img src="https://img.shields.io/travis/mitchallen/generator-mitchallen-react-component.svg?style=flat-square" alt="Continuous Integration">
+  </a>
+  <a href="https://codecov.io/gh/mitchallen/generator-mitchallen-react-component">
+    <img src="https://codecov.io/gh/mitchallen/generator-mitchallen-react-component/branch/master/graph/badge.svg" alt="Coverage Status">
+  </a>
+  <a href="https://npmjs.org/package/generator-mitchallen-react-component">
+    <img src="http://img.shields.io/npm/dt/generator-mitchallen-react-component.svg?style=flat-square" alt="Downloads">
+  </a>
+  <a href="https://npmjs.org/package/generator-mitchallen-react-component">
+    <img src="http://img.shields.io/npm/v/generator-mitchallen-react-component.svg?style=flat-square" alt="Version">
+  </a>
+  <a href="https://npmjs.com/package/generator-mitchallen-react-component">
+    <img src="https://img.shields.io/github/license/mitchallen/generator-mitchallen-react-component.svg" alt="License"></a>
+  </a>
+</p>
+
+
 > react component project generator
 
 ## Installation
@@ -40,6 +58,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.24
+
+* Updated badges in readme
+
 ### Version 0.0.23
 
 * Generator test case now passes --notest option
@@ -60,9 +82,3 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 * * *
 
-[npm-image]: https://badge.fury.io/js/generator-mitchallen-react-component.svg
-[npm-url]: https://npmjs.org/package/generator-mitchallen-react-component
-[travis-image]: https://travis-ci.org/mitchallen/generator-mitchallen-react-component.svg?branch=master
-[travis-url]: https://travis-ci.org/mitchallen/generator-mitchallen-react-component
-[daviddm-image]: https://david-dm.org/mitchallen/generator-mitchallen-react-component.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/mitchallen/generator-mitchallen-react-component
