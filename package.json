@@ -20,6 +20,7 @@
     "yeoman-generator"
   ],
   "devDependencies": {
+    "codecov": "^2.2.0",
     "eslint": "^3.18.0",
     "eslint-config-xo-space": "^0.16.0",
     "istanbul": "^0.4.5",
@@ -33,12 +34,14 @@
     "yosay": "^2.0.0"
   },
   "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "testEnvironment": "node"
   },
   "scripts": {
     "pretest": "eslint . --fix",
     "test": "jest __tests__",
-    "test-coverage": "jest --coverage __tests__",
+    "test-coverage": "jest --coverage __tests__ && ./node_modules/.bin/codecov",
     "patch": "npm version patch",
     "postpatch": "git push origin --tags",
     "prepublish": "nsp check",
