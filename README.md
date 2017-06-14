@@ -70,6 +70,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.32
+
+* removed extra code coverage step from .travis.xml
+
 ### Version 0.0.31
 
 * Install codecov dev dependency for test coverage
