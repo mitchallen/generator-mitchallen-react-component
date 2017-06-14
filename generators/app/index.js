@@ -38,12 +38,14 @@ module.exports = class extends Generator {
     {
       type: 'input',
       name: 'packageName',
-      message: 'npm package name'
+      message: 'npm package name',
+      default: 'my-component'
     },
     {
       type: 'input',
       name: 'reactClassName',
-      message: 'react component class name (Capitalize, no dashes)'
+      message: 'react component class name (Capitalize, no dashes)',
+      default: 'MyComponent'
     },
     {
       type: 'input',
@@ -77,14 +79,15 @@ module.exports = class extends Generator {
     }];
 
     return this.prompt(prompts).then(props => {
-      // To access props later use this.props.someAnswer;
       this.props = props;
     }).then(() => {
-      this.log('==> scoped: ', this.props.scoped);
-      this.log('==> scope: ', this.props.scopeName);
-      this.log('==> package name: ', this.props.packageName);
+      const pkg = this.props.packageName;
+      if (this.props.scoped) {
+        this.log('==> scope: ', this.props.scopeName);
+      }
+      this.log('==> package name: ', this.props.scoped ? '@' + this.props.scopeName + '/' + pkg : pkg);
+      this.log('==> react class name: ', this.props.reactClassName);
       this.log('==> npm author: ', this.props.npmAuthor);
-      this.log('==> no test (option): ', this.options.notest);
     });
   }
 
