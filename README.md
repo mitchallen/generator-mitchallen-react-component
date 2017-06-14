@@ -65,7 +65,7 @@ yo mitchallen-react-component --notest
 ## License
 
 MIT © [Mitch Allen](http://mitchallen.com)
-
+ 
 * * *
 
 ## Version History
