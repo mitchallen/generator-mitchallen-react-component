@@ -15,7 +15,17 @@ npm install -g generator-mitchallen-react-component
 Then generate your new project:
 
 ```bash
+mkdir myproject
+cd myproject
 yo mitchallen-react-component
+```
+
+### Skip Tests
+
+To skip running tests after package creation, use the __--notest__ flag:
+
+```bash
+yo mitchallen-react-component --notest
 ```
 
 ## Getting To Know Yeoman
@@ -30,11 +40,16 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+
+### Version 0.0.22
+
+* Added --notest flag which will skip test run after package creation
+
 ### Version 0.0.21
 
 * Added end routine to run __npm test__ at the end
  * This triggers webpack
- * This causes a side effect causing the generator tests themselves to throw an error (issue submitted - generator only - not the generated package)
+ * This causes a side effect causing the generator tests themselves to throw an error (update: use --notest flag to skip)
 
 ### Version 0.0.20
 

@@ -4,6 +4,16 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 
 module.exports = class extends Generator {
+
+  // Reference: http://yeoman.io/authoring/user-interactions.html
+  // Note: arguments and options should be defined in the constructor.
+  constructor(args, opts) {
+    super(args, opts);
+
+    // This method adds support for a `--notest` flag
+    this.option('notest'); // Results in: this.options.notest
+  }
+
   prompting() {
     // Have Yeoman greet the user.
     this.log(yosay(
@@ -74,6 +84,7 @@ module.exports = class extends Generator {
       this.log('==> scope: ', this.props.scopeName);
       this.log('==> package name: ', this.props.packageName);
       this.log('==> npm author: ', this.props.npmAuthor);
+      this.log('==> no test (option): ', this.options.notest);
     });
   }
 
@@ -191,8 +202,12 @@ module.exports = class extends Generator {
   }
 
   end() {
-    // This causes issues for running tests on generator
-    // Running tests will trigger build and webpack first
-    this.spawnCommand('npm', ['test']);
+    if (this.options.notest === undefined) {
+      // Run tests after generation: yo mitchallen-react-component
+      // Don't run tests: yo mitchallen-react-component --notest
+      // Have to skip with flag because this causes issues for running tests on generator
+      // Running tests will trigger build and webpack first
+      this.spawnCommand('npm', ['test']);
+    }
   }
 };
