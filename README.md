@@ -70,10 +70,13 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.30
+
+* Add test-coverage script
+
 ### Version 0.0.29
 
 * Added codecoverage support to .travis.yml
-* Installed istanbul as dev dependency
 * Added a .npmignore file
 
 ### Version 0.0.28
