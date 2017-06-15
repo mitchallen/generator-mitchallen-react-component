@@ -85,6 +85,7 @@ MIT © [Mitch Allen](http://mitchallen.com)
 ### Version 0.0.33
 
 * Corrected documentation on what test framework needs to be installed where
+* Removed link script
 
 ### Version 0.0.32
 
