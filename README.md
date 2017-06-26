@@ -82,6 +82,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.34
+
+* Upgraded local npm to 5.0.3 to resolve readme not being included in published package
+
 ### Version 0.0.33
 
 * Corrected documentation on what test framework needs to be installed where

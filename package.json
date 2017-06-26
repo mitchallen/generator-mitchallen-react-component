@@ -44,7 +44,7 @@
     "test-coverage": "jest --coverage __tests__ && ./node_modules/.bin/codecov",
     "patch": "npm version patch",
     "postpatch": "git push origin --tags",
-    "prepublish": "nsp check",
+    "prepublishOnly": "nsp check",
     "//": "Do NOT create a 'publish' script - will cause publishing loop"
   },
   "eslintConfig": {
