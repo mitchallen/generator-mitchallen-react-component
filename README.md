@@ -108,6 +108,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.36
+
+* Updated dependency versions in generated package.json
+
 ### Version 0.0.35
 
 * Added CircleCI support
