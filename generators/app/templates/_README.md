@@ -4,8 +4,8 @@
 --
 
 <p align="left">
-  <a href="https://travis-ci.org/<%= travisUser %>/<%= packageName %>">
-    <img src="https://img.shields.io/travis/<%= travisUser %>/<%= packageName %>.svg?style=flat-square" alt="Continuous Integration">
+  <a href="https://circleci.com/gh/<%= cirlcleCiUser %>/<%= packageName %>">
+    <img src="https://img.shields.io/circleci/project/github/<%= cirlcleCiUser %>/<%= packageName %>.svg" alt="Continuous Integration">
   </a>
   <a href="https://codecov.io/gh/<%= codecovUser %>/<%= packageName %>">
     <img src="https://codecov.io/gh/<%= codecovUser %>/<%= packageName %>/branch/master/graph/badge.svg" alt="Coverage Status">

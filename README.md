@@ -52,6 +52,32 @@ yo mitchallen-react-component --notest
 
 * * *
 
+## How-To Article
+
+For more detailed instructions, see this article:
+
+* [How to Create a React Component Project](http://scriptable.com/create-react-component-project/)
+
+* * *
+
+## Continuous Integration Support
+
+There seems to be issues running [webpack](https://webpack.github.io/) under [TravisCI](https://travis-ci.org). So I've made the following changes:
+
+* Added support for [CircleCI](https://circleci.com/)
+  * Generated projects will now create the following hidden folder and file:
+    * ```.circleci/config.yml```
+    * You can see it on a Mac/Linux with: ```ls -la```
+* The badge and link generated in the README now point to your project on CircleCI
+* You are now prompted for your CirclCI username instead of your Travis CI username
+* A ```.travis.yml``` file will still be generated, but currently leads to a failed build under Linux (Ubuntu Precise and Ubuntu Trusty)
+* You can track my bug report here:  
+  * https://github.com/travis-ci/travis-ci/issues/8265
+* When resolved I'll restore support for Travis CI
+
+
+* * *
+
 ## Getting To Know Yeoman
 
  * [Learn more about Yeoman](http://yeoman.io/).
@@ -81,6 +107,12 @@ MIT © [Mitch Allen](http://mitchallen.com)
 * * *
 
 ## Version History
+
+### Version 0.0.35
+
+* Added CircleCI support
+* Replaced TravisCI badge link in generated README with CircleCI link
+* Added link to How-To article in this doc.
 
 ### Version 0.0.34
 

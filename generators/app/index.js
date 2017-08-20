@@ -32,49 +32,55 @@ module.exports = class extends Generator {
       },
       type: 'input',
       name: 'scopeName',
-      message: 'npm scope name',
+      message: 'npm scope name:',
       store: true
     },
     {
       type: 'input',
       name: 'packageName',
-      message: 'npm package name',
+      message: 'npm package name:',
       default: 'my-component'
     },
     {
       type: 'input',
       name: 'reactClassName',
-      message: 'react component class name (Capitalize, no dashes)',
+      message: 'react component class name (Capitalize, no dashes):',
       default: 'MyComponent'
     },
     {
       type: 'input',
       name: 'bitbucketUser',
-      message: 'bitbucket.org user name',
+      message: 'bitbucket.org user name:',
       store: true
     },
     {
       type: 'input',
       name: 'githubUser',
-      message: 'github.com user name',
+      message: 'github.com user name:',
       store: true
     },
+    // {
+    //   type: 'input',
+    //   name: 'travisUser',
+    //   message: 'travis-ci.org user name',
+    //   store: true
+    // },
     {
       type: 'input',
-      name: 'travisUser',
-      message: 'travis-ci.org user name',
+      name: 'cirlcleCiUser',
+      message: 'circleci.com user name:',
       store: true
     },
     {
       type: 'input',
       name: 'codecovUser',
-      message: 'codecov.io user name',
+      message: 'codecov.io user name:',
       store: true
     },
     {
       type: 'input',
       name: 'npmAuthor',
-      message: 'npm author name',
+      message: 'npm author name:',
       store: true
     }];
 
@@ -104,6 +110,7 @@ module.exports = class extends Generator {
       bitbucketUser: this.props.bitbucketUser,
       githubUser: this.props.githubUser,
       travisUser: this.props.travisUser,
+      cirlcleCiUser: this.props.cirlcleCiUser,
       codecovUser: this.props.codecovUser,
       currentYear: new Date().getFullYear()
     };
@@ -145,9 +152,15 @@ module.exports = class extends Generator {
 
     // File: .travis.yml
 
-    this.fs.copy(
-      this.templatePath('_travis.yml'),
-      this.destinationPath('.travis.yml')
+    // this.fs.copy(
+    //   this.templatePath('_travis.yml'),
+    //   this.destinationPath('.travis.yml')
+    // );
+
+    this.fs.copyTpl(
+      this.templatePath('_cirlceci.config.yml'),
+      this.destinationPath('.circleci/config.yml'),
+      data
     );
 
     // File: webpack.config.js
