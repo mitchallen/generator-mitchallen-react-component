@@ -108,6 +108,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.39
+
+* Added test coverage calls to generated .circleci/config.yml
+
 ### Version 0.0.38
 
 * Added generated test coverage support
