@@ -157,6 +157,11 @@ module.exports = class extends Generator {
     //   this.destinationPath('.travis.yml')
     // );
 
+    this.fs.copy(
+      this.templatePath('_codecov.yml'),
+      this.destinationPath('.codecov.yml')
+    );
+
     this.fs.copyTpl(
       this.templatePath('_cirlceci.config.yml'),
       this.destinationPath('.circleci/config.yml'),
@@ -183,6 +188,14 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('_index.js'),
       this.destinationPath('src/index.js'),
+      data
+    );
+
+    // _test-mocha.opts
+
+    this.fs.copyTpl(
+      this.templatePath('_test-mocha.opts'),
+      this.destinationPath('test/mocha.opts'),
       data
     );
 

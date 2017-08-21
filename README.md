@@ -108,6 +108,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.38
+
+* Added generated test coverage support
+
 ### Version 0.0.37
 
 * Added react-test-renderer ^15.6.1 to generated package.json to remove test warnings.
