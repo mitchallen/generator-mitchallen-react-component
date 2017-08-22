@@ -69,8 +69,8 @@ There seems to be issues running [webpack](https://webpack.github.io/) under [Tr
     * ```.circleci/config.yml```
     * You can see it on a Mac/Linux with: ```ls -la```
 * The badge and link generated in the README now point to your project on CircleCI
-* You are now prompted for your CirclCI username instead of your Travis CI username
-* A ```.travis.yml``` file will still be generated, but currently leads to a failed build under Linux (Ubuntu Precise and Ubuntu Trusty)
+* You are now prompted for your CircleCI username instead of your Travis CI username
+* A ```.travis.yml``` file is no longer generated
 * You can track my bug report here:  
   * https://github.com/travis-ci/travis-ci/issues/8265
 * When resolved I'll restore support for Travis CI
@@ -107,6 +107,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 * * *
 
 ## Version History
+
+### Version 0.0.40
+
+* Updated doc regarding Travis CI
 
 ### Version 0.0.39
 
