@@ -108,6 +108,11 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.41
+
+* Removed duplicate dependencies from generated package.json file
+* Removed unused entries and code from generated Gruntfile.js
+
 ### Version 0.0.40
 
 * Updated doc regarding Travis CI
