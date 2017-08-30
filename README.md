@@ -108,6 +108,14 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.42
+
+* Fixes and updates
+* #6 - Updated .circleci/config.yml template to install react
+* #5 - react is now just a peer dependency
+* #4 - added eslint as a dev dependency
+* #3 - updated babel plugins in .babelrc and related packages in package.json
+
 ### Version 0.0.41
 
 * Removed duplicate dependencies from generated package.json file
