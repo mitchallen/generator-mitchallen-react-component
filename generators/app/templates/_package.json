@@ -31,7 +31,6 @@
     "cross-env": "^5.0.5",
     "jsdom-global": "^3.0.2",
     "prop-types": "^15.5.10",
-    "react": "^15.5.4",
     "webpack": "^3.5.5"
   },
   "devDependencies": {
