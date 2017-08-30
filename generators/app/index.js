@@ -231,12 +231,6 @@ module.exports = class extends Generator {
   }
 
   end() {
-    if (this.options.notest === undefined) {
-      // Run tests after generation: yo mitchallen-react-component
-      // Don't run tests: yo mitchallen-react-component --notest
-      // Have to skip with flag because this causes issues for running tests on generator
-      // Running tests will trigger build and webpack first
-      this.spawnCommand('npm', ['test']);
-    }
+    // End
   }
 };

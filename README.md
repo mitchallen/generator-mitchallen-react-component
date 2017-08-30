@@ -42,13 +42,11 @@ cd myproject
 yo mitchallen-react-component
 ```
 
-### Skip Tests
+### React peer dependency
 
-To skip running tests after package creation, use the __--notest__ flag:
+Now __react__ is only installed as a peer dependency. It is assumed that whatever app the component is dropped into will install react.  This avoid errors with some libraries that won't compile if two versions of react are found in the same project.  
 
-```bash
-yo mitchallen-react-component --notest
-```
+Avoid installing react locally to avoid any future conflicts. To run the tests you may need to install react globally, or push to a ci server that installs react before running your tests.  The generated CircleCI script is setup to do that.
 
 * * *
 
@@ -107,6 +105,12 @@ MIT © [Mitch Allen](http://mitchallen.com)
 * * *
 
 ## Version History
+
+### Version 0.0.44
+
+* #10 install eslint-config-xo-space locally for generator
+* #9 updated doc re installing react for testing
+* #8 removed test call at the end of the installation script
 
 ### Version 0.0.43
 
