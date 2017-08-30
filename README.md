@@ -108,6 +108,10 @@ MIT © [Mitch Allen](http://mitchallen.com)
 
 ## Version History
 
+### Version 0.0.43
+
+* nsp now installed locally
+
 ### Version 0.0.42
 
 * Fixes and updates
