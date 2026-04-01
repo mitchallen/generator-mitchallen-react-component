@@ -58,5 +58,12 @@
     "type": "git",
     "url": "https://github.com/mitchallen/generator-mitchallen-react-component.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "@tootallnate/once": "3.0.1",
+    "lodash": "4.17.5",
+    "yargs-parser": "13.1.2",
+    "js-yaml": "3.14.2",
+    "tmp": "0.2.4"
+  }
 }
